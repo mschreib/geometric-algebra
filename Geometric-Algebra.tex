@@ -1,0 +1,51 @@
+\RequirePackage[l2tabu, orthodox]{nag} %will check for bad habits and outdated packages
+
+\documentclass[twocolumn]{scrartcl}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% useful packages
+\usepackage{amsmath,amssymb} %do math
+\usepackage{graphicx} %insert figures with \includegraphics[scale=•]{•}
+%\usepackage{blkarray} %create labled matricies with \begin{blockarray}{ccc} to define column lables and then inside \begin{block}{(cc)c} to define rest of matrix and row lables.
+%\usepackage{systeme} %create system of equations
+\usepackage{wrapfig} %allows wrapped figures
+\usepackage[normal]{caption} % can rename caption headers such as "figure"
+\usepackage{subcaption} % can put two images in figure section with own captions
+\usepackage{chemformula} %chemical equation and formula writer (use \ch{})
+%\usepackage[version=4]{mhchem} %different chemical formula writer
+\usepackage{notoccite} %prevents counting citations in Figures and ToCs before main text
+\usepackage{siunitx} %converts number to scientific notation \num{2.3e3}
+\usepackage{tabulary} %allows textwidth tables
+\usepackage{pgfplots} %create plots from equations
+\usepackage{textcomp} % allows some more symbols such as \textmu
+\usepackage{tikz} % draw vector graphics
+\usepackage{microtype} %improves some word and letter spacing
+\usepackage{booktabs} %improves tables \begin{tabular}{llr}
+\usepackage{standalone} %compile files externally such as graphics or chapters in separate file with \documentclass{standalone}
+
+\usepackage{hyperref} %hyperlinks references to figs, etc
+\usepackage{cleveref} % references figs, etc with \cref w/o typing Figure~\ref
+%\usepackage[sorting=none, hyperref]{biblatex} % for biblatex
+%\addbibresource{references.bib} % for biblatex
+
+% Personal definitions
+\newcommand{\wdth}{7 cm}  % define figure width
+\DeclareMathOperator{\grad}{grad}  % gradient
+\newcommand{\vect}[1]{\mathbf{#1}} % vectors and matrices
+
+%title information
+\title{Geometric Algebra}
+\date{Last edited: \today}
+\author{Makoto Schreiber}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{Starting out}
+
+\bibliographystyle{unsrt} %does citations in order of appearance
+\bibliography{references} % for bibtex
+\end{document}
